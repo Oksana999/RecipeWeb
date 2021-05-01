@@ -14,7 +14,7 @@
         </ol>
         <div class="carousel-inner" >
             <div th:each="recipe, iterstat : ${recipes}" th:class="${iterstat.index} == 0  ? 'carousel-item active':'carousel-item'">
-                <img class="d-block w-100" th:src="${recipe.img}" alt="Second slide">
+                <img  class="a"  th:src="${recipe.img}" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <a th:href="'/recipes/display?recipeId=' + ${recipe.id}"><h5 th:text="${recipe.name}"></h5></a>
                 </div>
